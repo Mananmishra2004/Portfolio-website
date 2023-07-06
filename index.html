@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>persional website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d32b8e8b3.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Sevices</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I'm <span>Manan Mishra</span> <br>From India</h1>
+            </div>
+        </div>
+        <!-- ---------About------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="images/about.jpg" >
+                    </div>
+                    <div class="about-col2">
+                       <h1 class="sub-title"> About Me</h1>
+                       <p>Hi my name is Manan Mishra . And I'am a Frontend Webdevloper . I'll design or redesign Website's or Mobile App. I'll work on HTML , CSS , JS . These are some information about my SKill , Experience , Education  Below. </p>
+                       <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skill"> 
+                        <ul>
+                            <li><span>Web Developer</span><br>HTML , CSS , JS </li>                            
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Programing Language</span><br>C , PYTHON , JAVA </li>
+                            
+                        </ul>
+                       </div>
+                       
+                       <div class="tab-contents" id="experience"> 
+                        <ul>
+                            <li><span>Internships</span><br>Internship with Intern savy.</li>   
+                            <p><li><span>As Web Developer:-</span>I performed some Task there <br><span>Task 1:-</span><p>Create a Contact form :
+
+                                Contact form allows users to submit
+                                their information and send messages
+                                directly from your website. You can use
+                                plugin or create a custom form using
+                                HTML and CSS.</p><br><span>Task 2:-</span> <p>Build a personal website :
+
+                                    You can use HTML, CSS to create a
+                                    simple but effective website that
+                                    highlights your strengths and
+                                    interests.</p></li></p>     
+
+                            
+                            
+                        </ul>
+                       </div>
+
+                        <div class="tab-contents" id="education"> 
+                        <ul>
+                            <li><span>Higher Secondary School Education</span><br>From Maharaja Agrasen Public School,Ajmer <br> With Subject:- PHYSICS , CHEMISTRY , MATHEMATICS </li>                            
+                            <li><span>Pursue B-Tech</span><br>From Government Engineering College,Ajmer <br><span>Branch:- Information Technology</span></li>
+                        </ul>
+
+                         </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- -----------------------services--------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I will design and develop modern and responsive website</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I will do unique ui ux design for your web or mobile app</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I will design modern android and ios app</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portfolio------------------------- -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="img-size"> <div class="work">
+                    <a><img src="images/Amazon-clone.png"> </a>
+                    
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>I created a Amazon Clone Website with the help of HTML , CSS </p>
+                        <a href="https://mananmishra2004.github.io/Amazone-clone/"> <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                  
+                </div>
+               
+               
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------------------contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manan.contactme@gmail.com</p>
+                    <div class="social-icon">
+                        <a href="https://instagram.com/manan_mishra_?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/manan-mishra-378a64250"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Created By Manan Mishra.</p>
+        </div>
+    </div>   
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+
+
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHHnFosGCHQfyQjI6OUM3QCBEFdH8qcai9xOfZL1a6HlkCYj3G7Npv0U-MEX7TidBNsA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+
+    
+
+
+
+</body>
+</html>
